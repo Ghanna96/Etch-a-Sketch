@@ -1,0 +1,12 @@
+#container{
+    display:grid;
+    grid-template-columns: repeat(16, 50px);
+    justify-content: center;
+  }
+  .box {
+    height: 50px;
+    width: 50px;
+  }
+  .effect{
+      background-color: #000;
+  }
