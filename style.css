@@ -1,11 +1,23 @@
+html{
+  background: #e4dfdc;
+}
+h1{
+  font-family: 'Shadows Into Light', cursive;
+}
 body{
-  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  width: 680px;
+  margin: 0 auto;
 }
 #container{
     display:grid;
-    height: 960px;
-    width: 960px;
+    background-color: #fff;
+    height: 680px;
+    width: 680px;
     border: solid 0.5px;
+    position: relative;
+    top: 50px;
   }
 .template{
   grid-template: repeat(16,1fr)/repeat(16,1fr);
@@ -13,6 +25,48 @@ body{
 .box {
   justify-content: stretch;
 }
-.effect{
-  background-color: #000;
+button{
+    background-color: #a9a9a9;
+    border: none;
+    padding: 16px 0;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin: 15px;
+}
+button:hover{
+  background-color:rgb(128, 25, 0);
+  color: rgb(255, 255, 255);
+}
+#black{
+  background-color: black;
+  color:white;
+}
+#black:hover{
+  background-color:white;
+  color: black;
+}
+#randomize{
+  background: #43C6AC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45deg, #191654, #43C6AC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #191654, #43C6AC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #EEEEEE;
+}
+#randomize:hover{
+  background: #43C6AC;
+}
+/*
+    position: relative;
+    left: 1000px;
+    top: 400px;
+    display: block;
+*/
+span{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: rgba(0, 0, 0, 0.411)
 }
